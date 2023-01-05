@@ -21,7 +21,7 @@ app.get("/", function(req, res){
 
 app.post("/", function(req, res){
     const City = req.body.cityName;
-    const api = "6b11f61fb89f3046f564e2d89c422261"
+    const api = "use your own by heading onto: openweathermap.org"
     const url = "https://api.openweathermap.org/geo/1.0/direct?q="+City+"&limit=1&appid="+api;
     https.get(url, function(response){
     console.log(response.statusCode);
